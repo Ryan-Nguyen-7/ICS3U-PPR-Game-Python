@@ -1,24 +1,19 @@
 #!/usr/bin/env python3
 
 # Created by Ryan Nguyen
-# Created on November 2020
-# This program is the "Space Aliens" program on the Pybadge
+# Created on January 2021
+# This program is the "Prance Prance Rebellion" game on the Pybadge
 
-# lesson 01 - Hello world
-
+# Lesson 01 - Hello world
 import ugame
 import stage
 
 
 def game_scene():
-    # this function is the main game game_scene
+    # main game function
 
-    image_bank_background = stage.Bank.from_bmp16("space_aliens_background.bmp")
-    background = stage.Grid(image_bank_background, 10, 8)
-    
-    game = stage.Stage(ugame.display, 60)
-    game.layers = [background]
-    game.render_block()
+    print("\n\n\n") #  3 blank lines
+    print("Hello, World!")
 
     # repeat forever, game loop
     while True:

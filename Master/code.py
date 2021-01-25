@@ -30,7 +30,13 @@ def splash_scene():
     # define sound
     damage_sound = open("damage.wav", 'rb')
     boop_sound = open("boop.wav", 'rb')
+  
+    # score
+    score = 0
     
-    sound = ugame.audio
-    sound.stop()
-    sound.mute(False)
+    score_text = stage.Text(width= 70, height = 14)
+    score_text.clear()
+    score_text.cursor(85, 0)
+    score_text.move(1,1)
+    score_text.text("Score: {0:05n}".format(score))
+    
